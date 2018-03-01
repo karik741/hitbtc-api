@@ -152,7 +152,7 @@ class HitBtcAPITrading {
      * Closes all orders in status new or partiallyFilled.
      */
     public function cancelAllOrders() {
-         return $this->request('order', null, array(), 'DELETE');
+         return $this->request('order', null, [], 'DELETE');
     }
     /**
      * JSON request functionality wrapper.
